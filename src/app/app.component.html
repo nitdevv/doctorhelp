@@ -1,0 +1,434 @@
+<div class="container">
+   <mat-menu #appMenu="matMenu">
+      <button mat-menu-item>Book an appoinment</button>
+      <button mat-menu-item>cunsult doctor online</button>
+   </mat-menu>
+   <mat-toolbar>
+      <button mat-icon-button [matMenuTriggerFor]="appMenu"> <i class="material-icons">reorder</i>DoctorHelp</button>
+   </mat-toolbar>
+   <div class="navbar">
+      <a href="#home">Get listed for free</a>
+      <div class="dropdown">
+         <button class="dropbtn">for clinic and hospitals <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content"> <a href="#">software for clinic</a>
+            <a href="#">software for hospitals</a>
+            <a href="#">Advertising</a>
+         </div>
+      </div>
+   </div>
+   <div style="clear:both"></div>
+   <div class="home-page-banner"></div>
+   <div class="home-banner-footer-container">
+      <div class="home-banner-footer-wrapper">
+         <a class="banner-footer-item"> <i class="material-icons tab-icon">chat</i>
+         <span>Consult online</span>
+         </a>
+         <a class="banner-footer-item"> <i class="material-icons tab-icon">add_shopping_cart</i>
+         <span>Order medicines</span>
+         </a>
+         <a class="banner-footer-item"> <i class="material-icons tab-icon">book</i>
+         <span>View medical records</span>
+         </a>
+         <a class="banner-footer-item"> <i class="material-icons tab-icon">hourglass_full</i>
+         <span>Book test</span>
+         </a>
+         <a class="banner-footer-item"> <i class="material-icons tab-icon">library_books</i>
+         <span>Read articles</span>
+         </a>
+         <a class="banner-footer-item"> <i class="material-icons tab-icon">shopping_basket</i>
+         <span>For healthcare providers</span>
+         </a>
+      </div>
+   </div>
+   <div class="section home-details-wrapper">
+      <div class="home-details-table-wrapper active" style="height: 600px;">
+         <div class="home-details-section">
+            <div class="home-details-section-wrapper left">
+               <div class="home-details-section-details">
+                  <div class="home-details-section-title">
+                     <h3 class="u-d-inline">Instant appointment with doctors.</h3>
+                     <h2 class="u-d-inline u-t-bold show-for-india">Guaranteed.</h2>
+                  </div>
+                  <div class="home-details-section-description">
+                     <p class="hide-for-india  hide">Find the right doctor, clinic, medical centre or hospital, and book your appointment in seconds.</p>
+                     <div> <i class="material-icons icon-ic_done_open_system">done</i>
+                        <span class="u-t-bold">100,000</span>
+                        <span>Verified doctors</span>
+                     </div>
+                     <div> <i class="material-icons icon-ic_done_open_system">done</i>
+                        <span class="u-t-bold">3M+</span>
+                        <span>Patient recommendations</span>
+                     </div>
+                     <div> <i class="material-icons icon-ic_done_open_system">done</i>
+                        <span class="u-t-bold">25M</span>
+                        <span>Patients/year</span>
+                     </div>
+                  </div>
+                  <div class="home-details-section-action"> <a class="e-btn e-btn-light js-speciality-item">Find me the right doctor</a>
+                  </div>
+                  <div id="bookReviews" class="review-wrapper show-for-india owl-carousel owl-loaded">
+                     <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1680px;">
+                           <div class="owl-item active" style="width: 420px;">
+                              <div class="u-t-grey">
+                                 <div class="review-star u-bottom-spacer u-text-green"> <i class="material-icons icon-star">star_rate</i>
+                                 </div>
+                                 <div class="review-text u-t-regular">“Great app..get to know actual qualification of doctors n their alma mater n experience to judge the background..along with peoples review...have stopped calling n taking appointments..just DoctorHelpline it”</div>
+                                 <div>
+                                    <i class="material-icons icon-user">person_pin</i>
+                                    <span class="u-t-regular u-inline-top review-user-name">Deepak Kumar</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section home-details-wrapper show-for-india" style="   background-color: #f0f0f5">
+      <div class="home-details-table-wrapper active" style="height: 600px;">
+         <div class="home-details-section">
+            <div class="home-image-container left">
+               <div class="home-consult-section home-illustration">
+                  <!--<pate the image here-->
+               </div>
+            </div>
+            <div class="home-details-section-wrapper right">
+               <div class="home-details-section-details">
+                  <div class="home-details-section-title">
+                     <h2 class="u-d-inline">Skip the waiting room.</h2>
+                     <br>
+                     <h2 class="u-d-inline u-t-bold">Consult online.</h2>
+                  </div>
+                  <div class="home-details-section-description">
+                     <div> <i class="material-icons icon-ic_done_open_system">done</i>
+                        <span class="u-t-bold">3M+</span>
+                        <span>patients helped</span>
+                     </div>
+                     <div> <i class="material-icons icon-ic_done_open_system">done</i>
+                        <span>Verified doctors respond in </span>
+                        <span class="u-t-bold">20 minutes</span>
+                     </div>
+                     <div> <i class="material-icons icon-ic_done_open_system">done</i>
+                        <span class="u-t-bold">100%</span>
+                        <span>private and confidential</span>
+                     </div>
+                  </div>
+                  <div class="home-details-section-action"> <a class="e-btn e-btn-light">Chat now</a>
+                     <span id="doctorsOnline" class="doctors-online u-t-grey"><span class="u-pulse left"></span><span class="u-t-bold">24824</span><span> doctors online</span></span>
+                  </div>
+                  <div id="bookReviews" class="review-wrapper show-for-india owl-carousel owl-loaded">
+                     <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1680px;">
+                           <div class="owl-item active" style="width: 420px;">
+                              <div class="u-t-grey">
+                                 <div class="review-star u-bottom-spacer u-text-green"> <i class="material-icons icon-star">star_rate</i>
+                                 </div>
+                                 <div class="review-text u-t-regular">“Great app..get to know actual qualification of doctors n their alma mater n experience to judge the background..along with peoples review...have stopped calling n taking appointments..just DoctorHelpline it”</div>
+                                 <div> <i class="material-icons icon-user">person_pin</i>
+                                    <span class="u-t-regular u-inline-top review-user-name">Deepak Kumar</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section health-feed-container home-details-wrapper show-for-india">
+      <div id="healthFeedContainer" class="home-details-table-wrapper active" style="height: 600px;">
+         <div>
+            <div class="home-fit-header u-t-center u-t-bold">
+               <h2>Read top articles from health experts</h2>
+            </div>
+            <div id="articlesWrapper" class="articles-wrapper owl-carousel owl-loaded">
+               <div class="owl-stage-outer">
+                  <div class="owl-stage" style="transform: translate3d(-666px, 0px, 0px); transition: 0.8s; width: 1667px;">
+                     <div class="owl-item" style="width: 333.333px;">
+                        <a href="#" target="_blank" class="home-fit-body-container">
+                           <div class="home-fit-body">
+                              <div class="article-image-wrapper">
+                                 <img src="https://www.practostatic.com/fit/b0b1b499163bab969a9aae413b03eb853a2717f5">
+                              </div>
+                              <div class="fit-details-wrapper">
+                                 <div class="u-t-bold home-fit-title">
+                                    Health Benefits of Eating Eggs
+                                 </div>
+                                 <div class="home-fit-author u-t-bold">
+                                    <span>Ms.Shreya</span>,
+                                    <span>Dietitian/Nutritionist</span>
+                                 </div>
+                                 <div>
+                                    <span class="u-t-bold u-t-regular u-t-grey">366</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                    <span class="bullet-separator">●</span>
+                                    <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">34214</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="owl-item" style="width: 333.333px;">
+                        <a href="#" target="_blank" class="home-fit-body-container">
+                           <div class="home-fit-body">
+                              <div class="article-image-wrapper">
+                                 <img src="https://www.practostatic.com/fit/01d86028b48566918fd415786c22f80911a718ac">
+                              </div>
+                              <div class="fit-details-wrapper">
+                                 <div class="u-t-bold home-fit-title">
+                                    Ayurved Panchakarma For Healthy Life
+                                 </div>
+                                 <div class="home-fit-author u-t-bold">
+                                    <span>Dr. Atulkumar Bedre</span>,
+                                    <span>Ayurveda</span>
+                                 </div>
+                                 <div>
+                                    <span class="u-t-bold u-t-regular u-t-grey">302</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                    <span class="bullet-separator">●</span>
+                                    <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">24990</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="owl-item active" style="width: 333.333px;">
+                        <a href="#" target="_blank" class="home-fit-body-container">
+                           <div class="home-fit-body">
+                              <div class="article-image-wrapper">
+                                 <img src="https://www.practostatic.com/fit/1d1eebe0761ac58dc527b2f10dafbdfc766df0a0">
+                              </div>
+                              <div class="fit-details-wrapper">
+                                 <div class="u-t-bold home-fit-title">
+                                    Say "bye" to Acne!
+                                 </div>
+                                 <div class="home-fit-author u-t-bold">
+                                    <span>Ms. Swati Kapoor</span>,
+                                    <span>Dietitian/Nutritionist</span>
+                                 </div>
+                                 <div>
+                                    <span class="u-t-bold u-t-regular u-t-grey">240</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                    <span class="bullet-separator">●</span>
+                                    <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">26680</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="owl-item active" style="width: 333.333px;">
+                        <a href="#" target="_blank" class="home-fit-body-container">
+                           <div class="home-fit-body">
+                              <div class="article-image-wrapper">
+                                 <img src="https://www.practostatic.com/fit/b44ddc9f7f8e5dceff8fd66d3008cb9e9e223736">
+                              </div>
+                              <div class="fit-details-wrapper">
+                                 <div class="u-t-bold home-fit-title">
+                                    An all Natural Fat Burning Drink to lose 5 kgs in 2 weeks!
+                                 </div>
+                                 <div class="home-fit-author u-t-bold">
+                                    <span>Dr. Pallavi Jassal</span>,
+                                    <span></span>
+                                 </div>
+                                 <div>
+                                    <span class="u-t-bold u-t-regular u-t-grey">225</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                    <span class="bullet-separator">●</span>
+                                    <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">22229</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="owl-item active" style="width: 333.333px;">
+                        <a href="#" target="_blank" class="home-fit-body-container">
+                           <div class="home-fit-body">
+                              <div class="article-image-wrapper">
+                                 <img src="https://www.practostatic.com/fit/baf315b016567b904e4b1ffc34c11769a9f0a3d0">
+                              </div>
+                              <div class="fit-details-wrapper">
+                                 <div class="u-t-bold home-fit-title">
+                                    10 Hair Tips to Get That Gorgeous Hair
+                                 </div>
+                                 <div class="home-fit-author u-t-bold">
+                                    <span>Dr. Adil Hingora</span>,
+                                    <span>Homeopath</span>
+                                 </div>
+                                 <div>
+                                    <span class="u-t-bold u-t-regular u-t-grey">174</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Likes</span>
+                                    <span class="bullet-separator">●</span>
+                                    <span class="u-left-spacer u-t-bold u-t-regular u-t-grey">10603</span>
+                                    <span class="u-t-regular u-t-grey u-t-bold">Views</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="owl-nav">
+                  <div class="owl-prev">
+                     <div class="icon-ic_dropdown"></div>
+                  </div>
+                  <div class="owl-next disabled">
+                     <div class="icon-ic_dropdown"></div>
+                  </div>
+               </div>
+               <div class="owl-dots">
+                  <div class="owl-dot"><span></span></div>
+                  <div class="owl-dot active"><span></span></div>
+               </div>
+            </div>
+            <div class="u-t-center home-details-section-action">
+               <a class="e-btn e-btn-light" href="#" target="_blank">More articles</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section fp-auto-height footer-block clearfix">
+      <div class="pr-footer-new clearfix">
+         <div class="page-body-container">
+            <div class="pr-footer-column">
+               <div class="pr-footer-column-head">
+                  <h6 class="collapsed">Doctor Help</h6>
+               </div>
+               <div class="pr-footer-column-links responsive-hide">
+                  <div><a href="#" >About</a>
+                  </div>
+                  <div><a  href="#"  >Blog</a>
+                  </div>
+                  <div><a href="#"  >Careers</a>
+                  </div>
+                  <div><a href="#"  >Press</a>
+                  </div>
+                  <div><a href="#"  >Contact Us</a>
+                  </div>
+               </div>
+            </div>
+            <div class="pr-footer-column">
+               <div class="pr-footer-column-head">
+                  <h6 class="collapsed">For patients</h6>
+               </div>
+               <div class="pr-footer-column-links responsive-hide">
+                  <div><a href="#" >Ask free health questions</a>
+                  </div>
+                  <div><a href="#"  >Search for doctors</a>
+                  </div>
+                  <div><a href="#"  >Search for clinics</a>
+                  </div>
+                  <div><a href="#"  >Search for hospitals</a>
+                  </div>
+                  <div><a href="#"  >Search for diagnostics</a>
+                  </div>
+                  <div><a href="#"  >Read health articles</a>
+                  </div>
+                  <div><a href="#"  >Consult a doctor</a>
+                  </div>
+                  <div><a href="#"  >Order medicines</a>
+                  </div>
+                  <div><a href="#"  >Read about medicines</a>
+                  </div>
+                  <div><a href="#"  > DoctorHelpline drive</a>
+                  </div>
+                  <div><a href="#"  >Health app</a>
+                  </div>
+               </div>
+            </div>
+            <div class="pr-footer-column">
+               <div class="pr-footer-column-head">
+                  <h6 class="collapsed">For doctors</h6>
+               </div>
+               <div class="pr-footer-column-links responsive-hide">
+                  <div><a href="#"  >DoctorHelpline Consult</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Health Feed</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Profile</a>
+                  </div>
+               </div>
+               <div class="pr-footer-column-head">
+                  <h6 class="collapsed">For clinics</h6>
+               </div>
+               <div class="pr-footer-column-links responsive-hide">
+                  <div><a href="#"  >Ray by DoctorHelpline</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Reach</a>
+                  </div>
+                  <div><a href="#"  >Ray Tab</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Pro</a>
+                  </div>
+               </div>
+            </div>
+            <div class="pr-footer-column">
+               <div class="pr-footer-column-head">
+                  <h6 class="collapsed">For hospitals</h6>
+               </div>
+               <div class="pr-footer-column-links responsive-hide">
+                  <div><a href="#"  >Insta by DoctorHelpline</a>
+                  </div>
+                  <div><a href="#"  >Qikwell by DoctorHelpline</a>
+                  </div>
+                  <div><a href="#"  >Querent by DoctorHelpline</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Profile</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Reach</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Drive</a>
+                  </div>
+               </div>
+            </div>
+            <div class="pr-footer-column">
+               <div class="pr-footer-column-head">
+                  <h6 class="collapsed">More</h6>
+               </div>
+               <div class="pr-footer-column-links responsive-hide">
+                  <div><a href="#"  >Help</a>
+                  </div>
+                  <div><a href="#"  >Developers</a>
+                  </div>
+                  <div><a href="#"  >Privacy Policy</a>
+                  </div>
+                  <div><a href="#"  >Terms &amp; Conditions</a>
+                  </div>
+                  <div><a href="#"  >Healthcare directory</a>
+                  </div>
+                  <div><a href="#"  >DoctorHelpline Health Wiki</a>
+                  </div>
+               </div>
+            </div>
+            <div class="pr-footer-column social-footer-links">
+               <div class="pr-footer-column-head">
+                  <h6 class="collapsed">Social</h6>
+               </div>
+               <div class="pr-footer-column-links responsive-hide">
+                  <div> <a href="#"  >Facebook</a>
+                  </div>
+                  <div> <a href="#"  >Twitter</a>
+                  </div>
+                  <div> <a href="#"  >LinkedIn</a>
+                  </div>
+                  <div> <a href="#"  >Youtube</a>
+                  </div>
+                  <div> <a href="#"  >GitHub</a>
+                  </div>
+               </div>
+            </div>
+            <!--<div class="clear"></div>-->
+         </div>
+      </div>
+   </div>
+</div>
